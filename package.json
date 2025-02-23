@@ -1,0 +1,33 @@
+{
+    "name": "tinygo-wasm-runtime",
+    "version": "1.0.0",
+    "description": "TinyGo WebAssembly runtime for JavaScript and TypeScript",
+    "main": "dist/tinygo-wasm-runtime.js",
+    "type": "module",
+    "types": "dist/tinygo-wasm-runtime.d.ts",
+    "homepage": "https://github.com/jashok5/tinygo-wasm-runtime",
+    "scripts": {
+        "build": "rollup -c",
+        "type-check": "tsc --noEmit",
+        "prepublishOnly": "npm run build"
+    },
+    "keywords": [
+        "tinygo",
+        "webassembly",
+        "wasm",
+        "runtime"
+    ],
+    "author": "jashok5",
+    "license": "MIT",
+    "devDependencies": {
+        "typescript": "^5.0.0",
+        "@rollup/plugin-typescript": "^11.1.5",
+        "@rollup/plugin-terser": "^0.4.4",
+        "tslib": "^2.8.1",
+        "rollup": "^4.1.4"
+    },
+    "files": [
+        "dist",
+        "README.md"
+    ]
+}
